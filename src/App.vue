@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <User username="Enrique"></User>
+    <app-user username="Enrique"></app-user>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import User from './components/User.vue'
 export default {
   name: 'app',
   components: {
-    User
+    'app-user': User
   }
 }
 </script>
