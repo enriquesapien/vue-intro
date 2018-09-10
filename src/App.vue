@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <app-user username="Enrique"></app-user>
+    <router-view></router-view>
+    <!-- <app-user username="Enrique"></app-user> -->
+    
   </div>
 </template>
 
