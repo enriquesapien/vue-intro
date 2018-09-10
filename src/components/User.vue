@@ -4,18 +4,33 @@
 
         <p>My username is {{ username }}</p>
 
+        <p>{{ someData }}</p>
+
+        <hr>
+
+        <app-info></app-info>
+
     </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+<script>
+import Info from './Info.vue'
+
+export default {
 
     name: 'user',
     props: {
         username: String
+    },
+    data() {
+        return {
+            someData: 'This is someData'
+        }
+    },
+    components: {
+        'app-info': Info
     }
-})
+}
 </script>
 
 <style>
