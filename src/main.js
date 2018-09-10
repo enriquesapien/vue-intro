@@ -16,7 +16,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes: routes
+  routes: routes,
+  mode: 'history' // to remove the # in the URL
 });
 
 Vue.config.productionTip = false;
